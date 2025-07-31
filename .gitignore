@@ -1,0 +1,88 @@
+# Java build
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+**/out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+
+# Eclipse
+*.launch
+*.log
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.class
+.settings/
+.project
+.classpath
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+log/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Spring Boot devtools
+.spring-boot-devtools.properties
+.spring-boot-devtools.yml
+
+# Node (nếu dùng frontend)
+node_modules/
+dist/
+
+# Environment
+.env
+.env.*
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+*.pidfile
+docker-compose.override.yml
+
+# Others
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Test results
+/test-output/
+/surefire-reports/
+
