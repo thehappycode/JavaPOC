@@ -9,8 +9,8 @@ import jakarta.persistence.Id;
 public class CustomerEntity {
 
     @Id // Annotation @Id để JPA nhận biết nó là ID của đối tượng.
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private  String firstName;
     private  String lastName;
 
@@ -27,11 +27,17 @@ public class CustomerEntity {
         this.lastName = lastName;
     }
 
-    public Long getId() {
+    public CustomerEntity(long id, String firstName, String lastName){
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -54,7 +60,7 @@ public class CustomerEntity {
     @Override
     public String toString() {
         return String.format(
-                "Customer{id=%d, firstName='%s', lastName='%s'}",
+                "Customer {id=%d, firstName='%s', lastName='%s'}",
                 id, firstName, lastName);
     }
 }
