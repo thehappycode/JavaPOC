@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ManagingConfigurations-SIT
+  data source:
+    userName: sit-sa
+    password: sit-Abcd@1234
+
+server:
+  port: 8989
+
