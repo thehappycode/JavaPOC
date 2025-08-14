@@ -1,9 +1,8 @@
 spring:
   application:
-    name: ManagingConfigurations-SIT
+    name: ManagingConfigurations
   config:
     import: classpath:dbConfig.yml
 
 server:
   port: 8989
-

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySource("classpath:dbConfig.properties") // Sử dụng PropertySource
+@PropertySource("classpath:dbConfig.yml") // Sử dụng PropertySource
 public class DbConfiguration {
 
     @Autowired
@@ -14,8 +14,8 @@ public class DbConfiguration {
 
     @Override
     public  String toString(){
-        String userName = env.getProperty("userName");
-        String password = env.getProperty("password");
+        String userName = env.getProperty("database.userName");
+        String password = env.getProperty("database.password");
         return String.format("-> dbConfig: {userName: %s, password: %s}", userName, password);
     }
 }
