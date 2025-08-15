@@ -19,20 +19,19 @@ public class ManagingConfigurationsApplication {
 
 	public static void main(String[] args) {
 
-        // TODO: Using the Default configuration.
-        // SpringApplication.run(ManagingConfigurationsApplication.class, args);
+//         TODO: Using the Default configuration.
+//         ConfigurableApplicationContext applicationContext = SpringApplication.run(ManagingConfigurationsApplication.class, args);
 
-        // TODO: Using SpringApplication’s setDefaultProperties method
+//         TODO: Using SpringApplication’s setDefaultProperties method
         ConfigurableApplicationContext applicationContext =
                 SpringApplicationConfiguration.run(ManagingConfigurationsApplication.class, args);
 
-        // TODO: dbConfig - Sử dụng @PropertySource
-        // ConfigurableApplicationContext applicationContext = SpringApplication.run(ManagingConfigurationsApplication.class, args);
+//         TODO: dbConfig - Sử dụng @PropertySource
         DbConfiguration dbConfiguration = applicationContext.getBean(DbConfiguration.class);
         System.out.println(dbConfiguration.toString());
 
-        // TODO: Config data file
-        ConfigDataFile.run();
+//         TODO: Config data file
+//        ConfigDataFile.run();
 	}
 
 }

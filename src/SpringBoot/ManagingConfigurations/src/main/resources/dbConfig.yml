@@ -1,3 +1,3 @@
 database:
-  userName: sa
-  password: Abcd@1234
+  userName: ${POC_DB_USERNAME} # OS Environment Variable
+  password: ${POC_DB_PASSWORD} # OS Environment Variable
