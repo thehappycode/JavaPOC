@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySource("classpath:dbConfig.yml") // Sử dụng PropertySource
+@PropertySource("dbConfig.yml") // Sử dụng PropertySource
 public class DbConfiguration {
 
     @Autowired
