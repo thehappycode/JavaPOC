@@ -1,9 +1,3 @@
-spring:
-  application:
-    name: ManagingConfigurations-SIT
-  config:
-    import: classpath:dbConfig.yml
-
 server:
-  port: 8989
+  port: 8991
 

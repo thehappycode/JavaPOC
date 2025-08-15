@@ -1,6 +1,8 @@
 spring:
   application:
     name: ManagingConfigurations
+  profiles:
+    active: dev
   config:
     import: classpath:dbConfig.yml
 
